@@ -85,7 +85,7 @@ export default function Home() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `${topic}_insightvein_report.md`;
+    a.download = `${topic}_research_report.md`;
     a.click();
   };
 
@@ -244,7 +244,7 @@ export default function Home() {
                 <div className="flex justify-between items-center mb-12">
                   <div className="flex items-center gap-3 text-zinc-400">
                     <FileText className="w-5 h-5" />
-                    <span className="font-mono text-sm uppercase tracking-widest">{topic} Insight Report</span>
+                    <span className="font-mono text-sm uppercase tracking-widest">{topic} 리포트</span>
                   </div>
                   <div className="flex gap-4">
                     <button 
