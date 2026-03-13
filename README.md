@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# InsightVein 💡
+> AI-Powered Automated Technology Research & Insight Generator
 
-## Getting Started
+InsightVein은 Tavily Search API와 Google Gemini 1.5 Flash를 결합하여 복잡한 기술 리서치 과정을 자동화하는 웹 애플리케이션입니다. 사용자가 입력한 키워드를 바탕으로 최신 정보를 수집, 요약하고 시각화된 인사이트 리포트를 제공합니다.
 
-First, run the development server:
+## ✨ Key Features
+- **Real-time Research Pipeline**: 수집 → 요약 → 인사이트 → 리포트 생성 과정을 실시간 스트리밍으로 중계.
+- **Tavily Web Search**: 최신 웹 데이터를 직접 크롤링하여 정확한 시장 트렌드 반영.
+- **Visualized Insights**: Mermaid.js를 활용한 아키텍처 및 흐름도 자동 생성.
+- **Export to PDF/Markdown**: 프리미엄 디자인의 리포트를 다양한 포맷으로 소장 가능.
+- **Modern UI/UX**: Next.js 14, Tailwind CSS 4, Framer Motion 기반의 글래스모피즘 디자인.
 
+## 🛠 Tech Stack
+- **Frontend**: Next.js (App Router), React, Tailwind CSS, Framer Motion
+- **AI/Backend**: Google Gemini API, Tavily Search API, Node.js (Edge Runtime)
+- **Utilities**: Lucide React, react-markdown, mermaid.js, html2pdf.js
+
+## 🚀 Getting Started
+
+### 1. Close the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/[YOUR_USERNAME]/InsightVein.git
+cd InsightVein
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Environment Variables
+`.env.local` 파일을 생성하고 다음 키를 설정하세요:
+```env
+GEMINI_API_KEY=your_gemini_api_key
+TAVILY_API_KEY=your_tavily_api_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run Development Server
+```bash
+npm run dev
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+MIT License
