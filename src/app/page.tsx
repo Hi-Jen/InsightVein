@@ -85,7 +85,7 @@ export default function Home() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `${topic}_research_report.md`;
+    a.download = `${topic}_insightvein_report.md`;
     a.click();
   };
 
@@ -124,7 +124,7 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }}
           className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-white to-zinc-500 bg-clip-text text-transparent"
         >
-          MyTechResearch
+          InsightVein
         </motion.h1>
         
         <motion.p 
@@ -244,7 +244,7 @@ export default function Home() {
                 <div className="flex justify-between items-center mb-12">
                   <div className="flex items-center gap-3 text-zinc-400">
                     <FileText className="w-5 h-5" />
-                    <span className="font-mono text-sm uppercase tracking-widest">{topic} 리포트</span>
+                    <span className="font-mono text-sm uppercase tracking-widest">{topic} Insight Report</span>
                   </div>
                   <div className="flex gap-4">
                     <button 
@@ -289,7 +289,7 @@ export default function Home() {
       </main>
 
       <footer className="w-full max-w-5xl px-6 py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-zinc-500 text-sm">
-        <div>© 2026 MyTechResearch. All rights reserved.</div>
+        <div>© 2026 InsightVein. All rights reserved.</div>
         <div className="flex gap-8">
           <a href="#" className="hover:text-white transition-colors">Github</a>
           <a href="#" className="hover:text-white transition-colors">Portfolio</a>
