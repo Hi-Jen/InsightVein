@@ -1,64 +1,50 @@
-# InsightVein 🔍
+# InsightVein
 
-**InsightVein**은 최신 기술 동향을 자동으로 탐색하고, 깊이 있는 인사이트와 시각화된 아키텍처 다이어그램을 제공하는 AI 기반 기술 리서치 자동화 웹 애플리케이션입니다.
+**InsightVein**은 최신 기술 데이터를 실시간으로 발굴하여 전문적인 리포트로 가공해주는 리서치 자동화 서비스입니다. Tavily Search API와 Google Gemini 1.5 Flash를 결합하여 데이터 수집부터 요약, 인사이트 도출, 그리고 시각화 다이어그램이 포함된 리포트 생성까지의 과정을 자동화합니다.
 
-![InsightVein Preview](https://via.placeholder.com/1200x600?text=InsightVein+Preview)
+## 🌟 Key Features
 
-## ✨ 주요 기능
+- **Tavily AI Search**: 실시간 웹 검색을 통해 최신 기술 동향 및 데이터를 수집합니다.
+- **AI-Powered Analysis**: Gemini 1.5 Flash 모델이 수집된 데이터를 분석하여 요약 및 심층 인사이트를 도출합니다.
+- **Real-time Streaming**: `ReadableStream`을 통해 리서치의 각 단계(검색 -> 요약 -> 분석 -> 리포트)를 실시간으로 중계합니다.
+- **Mermaid.js Diagram**: 기술 구조나 흐름을 이해하기 쉽게 도와주는 아키텍처 다이어그램을 자동으로 생성합니다.
+- **Export to PDF/Markdown**: 완성된 리포트를 다양한 포맷으로 다운로드할 수 있습니다.
+- **References section**: 리서치에 사용된 원문 출처를 자동으로 리스트업하여 신뢰성을 확보합니다.
 
-- **실시간 웹 데이터 수집**: Tavily Search API를 통합하여 최신 기술 문서를 실시간으로 검색합니다.
-- **실시간 리서치 스트리밍**: `ReadableStream`을 통해 데이터 수집부터 리포트 완성까지의 과정을 실시간으로 중계합니다.
-- **AI 기반 인사이트 도출**: Google Gemini 1.5 Flash 모델이 방대한 데이터를 요약하고 핵심 기술적 가치를 분석합니다.
-- **Mermaid.js 아키텍처 시각화**: 복잡한 기술 구조를 한눈에 볼 수 있도록 다이어그램을 자동으로 생성하고 렌더링합니다.
-- **전문적인 리포트 내보내기**: 완성된 리서치 결과를 Markdown 및 PDF 포맷으로 다운로드할 수 있습니다.
-- **자동 출처 표기**: 리서치에 사용된 모든 웹 리소스를 'References' 섹션에 자동으로 기록합니다.
+## 🛠️ Tech Stack
 
-## 🚀 시작하기
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS 4, Framer Motion (Glassmorphism UI)
+- **AI APIs**: Google Gemini API, Tavily Search API
+- **Icons**: Lucide React
+- **Dependencies**: react-markdown, mermaid.js, html2pdf.js
 
-### 필수 요구사항
+## 🚀 Getting Started
 
-- [Node.js](https://nodejs.org/) (v18+)
-- [Gemini API Key](https://aistudio.google.com/)
-- [Tavily API Key](https://tavily.com/)
+### 1. Prerequisites
+- Node.js 20+
+- API Keys: [Gemini API Key](https://aistudio.google.com/), [Tavily API Key](https://tavily.com/)
 
-### 설치 및 로컬 실행
-
-1. 저장소 클론:
+### 2. Installation
 ```bash
-git clone https://github.com/사용자계정/InsightVein.git
+git clone https://github.com/your-username/InsightVein.git
 cd InsightVein
-```
-
-2. 의존성 설치:
-```bash
 npm install
 ```
 
-3. 환경 변수 설정 (`.env.local` 생성):
+### 3. Environment Variables
+`.env.local` 파일을 생성하고 아래 키를 입력하세요:
+
 ```env
-NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
 GEMINI_API_KEY=your_gemini_api_key
 TAVILY_API_KEY=your_tavily_api_key
 ```
 
-4. 개발 서버 실행:
+### 4. Run Development Server
 ```bash
 npm run dev
 ```
+이제 `http://localhost:3000`에서 서비스를 이용할 수 있습니다.
 
-이제 `http://localhost:3000`에서 InsightVein을 경험할 수 있습니다!
-
-## 🛠 기술 스택
-
-- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
-- **AI**: [Google Gemini Pro/Flash](https://deepmind.google/technologies/gemini/), [Tavily AI](https://tavily.com/)
-- **UI/UX**: [Tailwind CSS 4](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/), [Lucide React](https://lucide.dev/)
-- **Visuals**: [Mermaid.js](https://mermaid.js.org/)
-- **Deployment**: [Vercel](https://vercel.com/)
-
-## 📄 라이선스
-
-이 프로젝트는 MIT 라이선스에 따라 라이선스가 부여됩니다.
-
----
-Built with ❤️ by [Your Name/Team]
+## 📝 License
+This project is licensed under the MIT License.
