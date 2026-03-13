@@ -2,8 +2,6 @@
 
 **InsightVein**은 AI를 활용하여 복잡한 기술 리서치 과정을 자동화하고, 심도 있는 인사이트 리포트를 실시간으로 생성해주는 프리미엄 웹 도구입니다.
 
-![InsightVein Preview](https://via.placeholder.com/1200x600?text=InsightVein+Preview)
-
 ## ✨ 주요 기능
 
 - **실시간 웹 데이터 수집**: [Tavily Search API](https://tavily.com/)를 연동하여 최신 기술 정보를 검색합니다.
